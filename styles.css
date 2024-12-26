@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    font-family: "Monserrat", sans-serif;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    
+    backdrop-filter: blur(10px);
+}
+
+.card h1 {
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.card button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff6f61;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.card button:hover {
+    background: #e65c50;
+}
+
+.gift-box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    background: #fff;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#surprise-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform:translateY(100%);
+    transition: transform 1s ease-in-out;
+}
+
+/* Animation Trigger */
+body.loaded #surprise-image {
+    transform: translateY(0);
+}
